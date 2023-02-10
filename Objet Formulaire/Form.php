@@ -7,8 +7,8 @@
         private $textInputs = [];
         private $submitButton;
     
-        public function __construct(string $action, string $method) {
-            $this->form = "<form action='$action' method='$method'><fieldset><legend>Test formulaire</legend>";
+        public function __construct(string $action, string $method, string $legend) {
+            $this->form = "<form action='$action' method='$method'><fieldset><legend>'$legend'</legend>";
         }
     
         public function setText(string $name, string $value = "") {
